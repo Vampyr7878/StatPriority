@@ -246,7 +246,7 @@ function statPriorityGetSpecs()
 	elseif class == "DEMONHUNTER" then
 		return {"Havoc", "Vengeance"}
 	elseif class == "EVOKER" then
-		return {"Devstation", "Preservation"}
+		return {"Devastation", "Preservation"}
 	end
 end
 
