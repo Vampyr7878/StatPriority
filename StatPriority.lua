@@ -11,16 +11,16 @@ statPriorityStats["WARRIORFury"] = "Strength > Haste > Mastery > Critical Strike
 statPriorityStats["WARRIORProtection"] = "Strength > Haste > Versatility = Critical Strike > Mastery"
 
 statPriorityStats["PALADINHoly"] = "Intellect > Critical Strike > Mastery = Haste > Versatility"
-statPriorityStats["PALADINProtection"] = "Haste > Mastery > Versatility > Critical Strike"
+statPriorityStats["PALADINProtection"] = "Strength > Haste > Mastery > Versatility > Critical Strike"
 statPriorityStats["PALADINRetribution"] = "Strength > Haste > Versatility = Critical Strike > Mastery"
 
-statPriorityStats["HUNTERBeast Mastery"] = "Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
-statPriorityStats["HUNTERMarksmanship"] = "Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
-statPriorityStats["HUNTERSurvival"] = "Haste to 30% > Critical Strike to 44% > Versatility > Mastery"
+statPriorityStats["HUNTERBeast Mastery"] = "Agility > Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
+statPriorityStats["HUNTERMarksmanship"] = "Agility > Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
+statPriorityStats["HUNTERSurvival"] = "Agility > Haste to 30% > Critical Strike to 44% > Versatility > Mastery"
 
-statPriorityStats["ROGUEAssassination"] = "Mastery > Critical Strike > Haste > Versatility"
-statPriorityStats["ROGUEOutlaw"] = "Versatility > Critical Strike > Mastery > Haste"
-statPriorityStats["ROGUESubtlety"] = "Critical Strike > Mastery > Versatility > Haste"
+statPriorityStats["ROGUEAssassination"] = "Agility > Mastery > Critical Strike > Haste > Versatility"
+statPriorityStats["ROGUEOutlaw"] = "Agility > Versatility > Critical Strike > Mastery > Haste"
+statPriorityStats["ROGUESubtlety"] = "Agility > Critical Strike > Mastery > Versatility > Haste"
 
 statPriorityStats["PRIESTDiscipline"] = "Intellect > Haste > Critical Strike > Versatility > Mastery"
 statPriorityStats["PRIESTHoly"] = "Intellect > Mastery = Critical Strike > Versatility > Haste"
@@ -35,7 +35,7 @@ statPriorityStats["MAGEFire"] = "Intellect > Haste > Critical Strike > Versatili
 statPriorityStats["MAGEFrost"] = "Intellect > Mastery > Haste > Critical Strike to 33.34% > Versatility"
 
 statPriorityStats["WARLOCKAffliction"] = "Intellect > Haste to 30% > Mastery > Versatility = Critical Strike"
-statPriorityStats["WARLOCKDemonology"] = "Intellect > Haste to 30% > Critical Strike = Versatility > Mastery"
+statPriorityStats["WARLOCKDemonology"] = "Intellect > Haste to 27% > Critical Strike = Versatility > Mastery"
 statPriorityStats["WARLOCKDestruction"] = "Intellect > Haste to 30% > Critical Strike = Versatility > Mastery"
 
 statPriorityStats["DRUIDBalance"] = "Intellect > Mastery > Haste > Critical Strike > Versatility"
@@ -48,14 +48,14 @@ statPriorityStats["MONKMistweaver"] = "Intellect > Haste > Critical Strike > Ver
 statPriorityStats["MONKWindwalker"] = "Agility > Versatility = Critical Strike > Mastery > Haste"
 
 statPriorityStats["DEATHKNIGHTBlood"] = "Strength > Haste = Critical Strike = Versatility = Mastery"
-statPriorityStats["DEATHKNIGHTFrost"] = "Critical Strike > Haste > Mastery > Versatility"
-statPriorityStats["DEATHKNIGHTUnholy"] = "Mastery > Haste > Critical Strike > Versatility"
+statPriorityStats["DEATHKNIGHTFrost"] = "Strength > Critical Strike > Haste > Mastery > Versatility"
+statPriorityStats["DEATHKNIGHTUnholy"] = "Strength > Mastery > Critical Strike > Haste > Versatility"
 
 statPriorityStats["DEMONHUNTERHavoc"] = "Agility > Critical Strike > Mastery > Versatility > Haste"
 statPriorityStats["DEMONHUNTERVengeance"] = "Agility > Critical Strike > Haste > Versatility > Mastery"
 
 statPriorityStats["EVOKERAugmentation"] = "Intellect > Mastery > Haste > Critial Strike > Versatility"
-statPriorityStats["EVOKERDevastation"] = "Intellect > Mastery > Haste > Critial Strike > Versatility"
+statPriorityStats["EVOKERDevastation"] = "Intellect > Critial Strike > Versatility > Mastery > Haste"
 statPriorityStats["EVOKERPreservation"] = "Intellect > Mastery > Critial Strike > Versatility > Haste"
 
 function statPriorityFrameOnEvent(self, event, arg1)
