@@ -6,8 +6,8 @@ local statPriorityStats = {}
 local statPriorityTexts = {}
 local statPriorityBoxes = {}
 
-statPriorityStats["WARRIORArms"] = "Strength > Critical Strike > Haste > Mastery > Versatility"
-statPriorityStats["WARRIORFury"] = "Strength > Haste > Mastery > Critical Strike > Versatility"
+statPriorityStats["WARRIORArms"] = "Strength > Haste > Critical Strike > Versatility > Mastery"
+statPriorityStats["WARRIORFury"] = "Strength > Haste > Mastery > Versatility > Critical Strike"
 statPriorityStats["WARRIORProtection"] = "Strength > Haste > Versatility = Critical Strike > Mastery"
 
 statPriorityStats["PALADINHoly"] = "Intellect > Critical Strike > Mastery = Haste > Versatility"
@@ -15,7 +15,7 @@ statPriorityStats["PALADINProtection"] = "Strength > Haste > Mastery > Versatili
 statPriorityStats["PALADINRetribution"] = "Strength > Haste > Versatility = Critical Strike > Mastery"
 
 statPriorityStats["HUNTERBeast Mastery"] = "Agility > Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
-statPriorityStats["HUNTERMarksmanship"] = "Agility > Haste to 30% > Critical Strike to 44% > Mastery > Versatility"
+statPriorityStats["HUNTERMarksmanship"] = "Agility > Haste to 30% > Critical Strike to 44% > Mastery = Versatility"
 statPriorityStats["HUNTERSurvival"] = "Agility > Haste to 30% > Critical Strike to 44% > Versatility > Mastery"
 
 statPriorityStats["ROGUEAssassination"] = "Agility > Mastery > Critical Strike > Haste > Versatility"
@@ -39,7 +39,7 @@ statPriorityStats["WARLOCKDemonology"] = "Intellect > Haste to 27% > Critical St
 statPriorityStats["WARLOCKDestruction"] = "Intellect > Haste to 30% > Critical Strike = Versatility > Mastery"
 
 statPriorityStats["DRUIDBalance"] = "Intellect > Mastery > Haste > Critical Strike > Versatility"
-statPriorityStats["DRUIDFeral"] = "Agility > Mastery > Critical Strike > Versatility > Haste"
+statPriorityStats["DRUIDFeral"] = "Agility > Mastery > Critical Strike > Haste = Versatility"
 statPriorityStats["DRUIDGuardian"] = "Armor = Agility = Stamina > Haste > Versatility > Mastery > Critical Strike"
 statPriorityStats["DRUIDRestoration"] = "Intellect > Haste > Mastery > Critical Strike = Versatility"
 
@@ -54,8 +54,8 @@ statPriorityStats["DEATHKNIGHTUnholy"] = "Strength > Mastery > Critical Strike >
 statPriorityStats["DEMONHUNTERHavoc"] = "Agility > Critical Strike > Mastery > Versatility > Haste"
 statPriorityStats["DEMONHUNTERVengeance"] = "Agility > Critical Strike > Haste > Versatility > Mastery"
 
-statPriorityStats["EVOKERAugmentation"] = "Intellect > Mastery > Haste > Critial Strike > Versatility"
-statPriorityStats["EVOKERDevastation"] = "Intellect > Critial Strike > Versatility > Mastery > Haste"
+statPriorityStats["EVOKERAugmentation"] = "Intellect > Mastery > Critial Strike > Haste > Versatility"
+statPriorityStats["EVOKERDevastation"] = "Intellect > Critial Strike > Versatility = Mastery = Haste"
 statPriorityStats["EVOKERPreservation"] = "Intellect > Mastery > Critial Strike > Versatility > Haste"
 
 function statPriorityFrameOnEvent(self, event, arg1)
@@ -91,7 +91,7 @@ function statPriorityFrameCreate(frame, text, parent)
 		text:ClearAllPoints()
 		text:SetAllPoints(frame) 
 		text:SetJustifyH("CENTER")
-		text:SetJustifyV("CENTER")
+		text:SetJustifyV("MIDDLE")
 		frame:ClearAllPoints()
 		frame:SetPoint("BOTTOMRIGHT", parent, "TOPRIGHT",0,0)
 		frame:SetParent(parent)
