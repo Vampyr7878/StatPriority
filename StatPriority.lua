@@ -12,27 +12,27 @@ StatPriority.Stats["WARRIORProtection"] = "Strength > Haste > Critical Strike = 
 
 StatPriority.Stats["PALADINHoly"] = "Intellect > Haste > Mastery > Critical Strike > Versatility"
 StatPriority.Stats["PALADINProtection"] = "Strength > Haste > Mastery > Versatility = Critical Strike"
-StatPriority.Stats["PALADINRetribution"] = "Strength > Mastery > Critical Strike = Haste > Versatility"
+StatPriority.Stats["PALADINRetribution"] = "Strength > Mastery = Critical Strike > Haste > Versatility"
 
-StatPriority.Stats["HUNTERBeast Mastery"] = "Agility > Critical Strike = Haste > Mastery > Versatility"
-StatPriority.Stats["HUNTERMarksmanship"] = "Agility > Critical Strike > Haste > Mastery > Versatility"
+StatPriority.Stats["HUNTERBeast Mastery"] = "Agility > Haste > Critical Strike > Mastery > Versatility"
+StatPriority.Stats["HUNTERMarksmanship"] = "Agility > Critical Strike > Mastery > Versatility > Haste"
 StatPriority.Stats["HUNTERSurvival"] = "Agility > Mastery > Versatility > Critical Strike > Haste"
 
 StatPriority.Stats["ROGUEAssassination"] = "Agility > Critical Strike > Mastery > Haste > Versatility"
 StatPriority.Stats["ROGUEOutlaw"] = "Agility > Versatility > Haste > Critical Strike > Mastery"
 StatPriority.Stats["ROGUESubtlety"] = "Agility > Mastery > Versatility > Critical Strike > Haste"
 
-StatPriority.Stats["PRIESTDiscipline"] = "Intellect > Haste to 15%-20% > Critical Strike = Mastery > Versatility"
+StatPriority.Stats["PRIESTDiscipline"] = "Intellect > Haste to 20%-25% > Critical Strike = Mastery > Versatility"
 StatPriority.Stats["PRIESTHoly"] = "Intellect > Critical Strike = Mastery > Versatility > Haste"
 StatPriority.Stats["PRIESTShadow"] = "Intellect > Haste > Mastery > Critical Strike > Versatility"
 
-StatPriority.Stats["SHAMANElemental"] = "Intellect > Haste = Mastery > Critical Strike = Versatility"
+StatPriority.Stats["SHAMANElemental"] = "Intellect > Mastery > Haste > Versatility > Critical Strike"
 StatPriority.Stats["SHAMANEnhancement"] = "Mastery > Haste > Critical Strike > Versatility > Agility"
-StatPriority.Stats["SHAMANRestoration"] = "Intellect > Critical Strike > Versatility > Haste = Mastery"
+StatPriority.Stats["SHAMANRestoration"] = "Intellect > Haste > Critical Strike > Versatility > Mastery"
 
 StatPriority.Stats["MAGEArcane"] = "Intellect > Haste > Versatility > Mastery > Critical Strike"
-StatPriority.Stats["MAGEFire"] = "Intellect > Haste > Versatility > Mastery > Critical Strike"
-StatPriority.Stats["MAGEFrost"] = "Intellect > Haste > Critical Strike to 33.34% > Versatility > Mastery"
+StatPriority.Stats["MAGEFire"] = "Intellect > Haste > Mastery > Versatility > Critical Strike"
+StatPriority.Stats["MAGEFrost"] = "Intellect > Haste > Critical Strike to 33.34% > Mastery > Versatility"
 
 StatPriority.Stats["WARLOCKAffliction"] = "Intellect > Mastery = Critical Strike > Haste > Versatility"
 StatPriority.Stats["WARLOCKDemonology"] = "Intellect > Haste = Critical Strike > Mastery > Versatility"
@@ -44,18 +44,18 @@ StatPriority.Stats["DRUIDGuardian"] = "Armor = Agility = Stamina > Haste > Versa
 StatPriority.Stats["DRUIDRestoration"] = "Intellect > Haste = Mastery > Versatility > Critical Strike"
 
 StatPriority.Stats["MONKBrewmaster"] = "Agility = Armor > Versatility = Mastery = Critical Strike > Haste"
-StatPriority.Stats["MONKMistweaver"] = "Intellect > Haste > Critical Strike > Versatility = Mastery"
+StatPriority.Stats["MONKMistweaver"] = "Intellect > Haste > Critical Strike > Versatility > Mastery"
 StatPriority.Stats["MONKWindwalker"] = "Agility > Mastery = Haste > Versatility = Critical Strike"
 
 StatPriority.Stats["DEATHKNIGHTBlood"] = "Strength > Haste > Critical Strike = Versatility = Mastery"
 StatPriority.Stats["DEATHKNIGHTFrost"] = "Strength > Critical Strike > Mastery > Haste > Versatility"
-StatPriority.Stats["DEATHKNIGHTUnholy"] = "Strength > Mastery > Haste > Versatility > Critical Strike"
+StatPriority.Stats["DEATHKNIGHTUnholy"] = "Strength > Haste > Mastery > Critical Strike > Versatility"
 
-StatPriority.Stats["DEMONHUNTERHavoc"] = "Critical Strike = Mastery > Versatility > Haste > Agility"
+StatPriority.Stats["DEMONHUNTERHavoc"] = "Critical Strike = Mastery > Haste > Versatility > Agility"
 StatPriority.Stats["DEMONHUNTERVengeance"] = "Agility > Haste = Critical Strike > Versatility = Mastery"
 
-StatPriority.Stats["EVOKERAugmentation"] = "Intellect > Haste > Mastery > Critical Strike > Versatility"
-StatPriority.Stats["EVOKERDevastation"] = "Intellect > Critial Strike > Versatility = Mastery = Haste"
+StatPriority.Stats["EVOKERAugmentation"] = "Intellect > Critical Strike > Haste > Mastery > Versatility"
+StatPriority.Stats["EVOKERDevastation"] = "Intellect > Haste > Critial Strike > Mastery > Versatility"
 StatPriority.Stats["EVOKERPreservation"] = "Intellect > Mastery > Critial Strike > Haste > Versatility"
 
 function StatPriority:FrameOnEvent(event, arg1)
