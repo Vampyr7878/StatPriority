@@ -20,7 +20,7 @@ StatPriority.Stats["HUNTERSurvival"] = "Agility > Mastery > Critical Strike > Ha
 
 StatPriority.Stats["ROGUEAssassination"] = "Agility > Critical Strike > Mastery > Haste > Versatility"
 StatPriority.Stats["ROGUEOutlaw"] = "Agility > Versatility > Haste > Critical Strike > Mastery"
-StatPriority.Stats["ROGUESubtlety"] = "Agility > Mastery > Critical Strike > Haste > Versatility"
+StatPriority.Stats["ROGUESubtlety"] = "Agility > Haste > Critical Strike > Mastery > Versatility"
 
 StatPriority.Stats["PRIESTDiscipline"] = "Intellect > Haste to 20%-25% > Critical Strike = Mastery > Versatility"
 StatPriority.Stats["PRIESTHoly"] = "Intellect > Critical Strike > Versatility = Mastery > Haste"
@@ -34,7 +34,7 @@ StatPriority.Stats["MAGEArcane"] = "Intellect > Mastery > Critical Strike > Vers
 StatPriority.Stats["MAGEFire"] = "Intellect > Haste > Mastery > Critical Strike > Versatility"
 StatPriority.Stats["MAGEFrost"] = "Intellect > Mastery > Critical Strike > Versatility > Haste"
 
-StatPriority.Stats["WARLOCKAffliction"] = "Intellect > Mastery > Haste > Versatility > Critical Strike"
+StatPriority.Stats["WARLOCKAffliction"] = "Intellect > Mastery = Haste > Critical Strike > Versatility"
 StatPriority.Stats["WARLOCKDemonology"] = "Intellect > Haste = Critical Strike > Mastery > Versatility"
 StatPriority.Stats["WARLOCKDestruction"] = "Haste = Critical Strike > Intellect > Mastery > Versatility"
 
@@ -49,9 +49,9 @@ StatPriority.Stats["MONKWindwalker"] = "Agility > Critical Strike > Haste > Mast
 
 StatPriority.Stats["DEATHKNIGHTBlood"] = "Strength > Haste > Critical Strike = Versatility = Mastery"
 StatPriority.Stats["DEATHKNIGHTFrost"] = "Strength > Critical Strike > Mastery > Haste > Versatility"
-StatPriority.Stats["DEATHKNIGHTUnholy"] = "Strength >  Mastery > Critical Strike > Versatility > Haste"
+StatPriority.Stats["DEATHKNIGHTUnholy"] = "Strength > Mastery > Critical Strike > Haste > Versatility"
 
-StatPriority.Stats["DEMONHUNTERDevourer"] = "Intellect > Haste > Mastery > Critical Strike > Versatility"
+StatPriority.Stats["DEMONHUNTERDevourer"] = "Intellect > Mastery > Haste > Critical Strike > Versatility"
 StatPriority.Stats["DEMONHUNTERHavoc"] = "Agility > Critical Strike > Haste > Versatility > Mastery"
 StatPriority.Stats["DEMONHUNTERVengeance"] = "Agility > Haste > Versatility = Critical Strike > Mastery"
 
@@ -168,6 +168,8 @@ function StatPriority:GetSpecializationName(id)
 		spec = "Windwalker"
 	elseif id == 270 then 
 		spec = "Mistweaver"
+	elseif id == 1480 then
+		spec = "Devourer"
 	elseif id == 577 then 
 		spec = "Havoc"
 	elseif id == 581 then 
