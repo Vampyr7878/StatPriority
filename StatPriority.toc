@@ -2,7 +2,7 @@
 ## Title: Stat Priority
 ## Notes: Displays stat priority based on Icy-Veins
 ## Author: Vampyr78
-## Version: 4.0.1
+## Version: 4.0.2
 ## SavedVariablesPerCharacter: statPriorityStoredStats
 ## IconTexture: Interface\Icons\inv_misc_clipboard01.blp
 ## Category-enUS: User Interface
@@ -16,5 +16,6 @@
 ## Category-ruRU: Интерфейс пользователя
 ## Category-zhCN: 用户界面
 ## Category-zhTW: 使用者介面
+## OptionalDeps: ElvUI
 embeds.xml
 StatPriority.lua

@@ -67,7 +67,19 @@ end
 
 function StatPriority:FrameCreate(frame, text, parent)
 	if parent.IsVisible ~= nil and parent:IsVisible() then
-		frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+		if C_AddOns.IsAddOnLoaded("ElvUI") then
+			frame:SetBackdrop({bgFile = "Interface/Buttons/WHITE8x8",
+							   edgeFile = "Interface/Buttons/WHITE8x8",
+							   tile = false,
+							   edgeSize = 1, 
+							   insets = {left = 1,
+										 right = 1,
+										 top = 1,
+										 bottom = 1}})
+			frame:SetBackdropColor(0, 0, 0, 0.7)
+			frame:SetBackdropBorderColor(0, 0, 0, 1)
+		else
+			frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
 						   edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
 						   tile = true,
 						   tileSize = 16,
@@ -76,7 +88,8 @@ function StatPriority:FrameCreate(frame, text, parent)
 									 right = 1,
 									 top = 1,
 									 bottom = 1}}) 
-		frame:SetBackdropColor(0, 0, 0, 1)
+			frame:SetBackdropColor(0, 0, 0, 1)
+		end
 		frame:SetFrameStrata("TOOLTIP")
 		frame:SetWidth(parent:GetWidth())
 		if parent == PaperDollFrame then
